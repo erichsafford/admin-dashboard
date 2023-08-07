@@ -9,33 +9,58 @@
 <body>
     <div class="container">
         <div class="sidebar">
-            <img id="company-logo" src="img/company-logo.svg" alt="Company logo" style="filter: invert();">
-            <h1 id="sidebar-title">Dashboard</h1>
+            <div class="link-set" id="logo-set">
+                <img id="company-logo" src="img/company-logo.svg" alt="Company logo" style="filter: invert();">
+                <h1 id="sidebar-title">Dashboard</h1>
+            </div>
 
-            <img src="img/home.svg" alt="Home icon" id="home-icon" style="filter: invert();">
-            <h3 id="home">Home</h3>
-
-            <img src="img/profile.svg" alt="Profile icon" id="profile-icon" style="filter: invert();">
-            <h3 id="profile">Profile</h3>
-
-            <img src="img/messages.svg" alt=" icon" id="messages-icon" style="filter: invert();">
-            <h3 id="messages">Messages</h3>
-
-            <img src="img/history.svg" alt="History icon" id="history-icon" style="filter: invert();">
-            <h3 id="history">History</h3>
-
-            <img src="img/tasks.svg" alt="Tasks icon" id="-tasks-icon" style="filter: invert();">
-            <h3 id="tasks">Tasks</h3>
-
-            <img src="img/communities.svg" alt="Communities icon" id="communities-icon" style="filter: invert();">
-            <h3 id="communities">Communities</h3>
-
-            <img src="img/settings.svg" alt="Settings icon" id="settings-icon" style="filter: invert();">
-            <h3 id="settings">Settings</h3>
-            <img src="img/support.svg" alt="Support icon" id="support-icon" style="filter: invert();">
-            <h3 id="support">Support</h3>
-            <img src="img/security.svg" alt="Privacy icon" id="privacy-icon" style="filter: invert();">
-            <h3 id="privacy">Privacy</h3>
+            <div class="link-set">
+                <img src="img/home.svg" alt="Home icon" id="home-icon" style="filter: invert();">
+                <h3 id="home">Home</h3>
+            </div>
+            <hr class="nav-hr">
+            <div class="link-set">
+                <img src="img/profile.svg" alt="Profile icon" id="profile-icon" style="filter: invert();">
+                <h3 id="profile">Profile</h3>
+            </div>
+            <hr class="nav-hr">
+            <div class="link-set">
+                <img src="img/messages.svg" alt=" icon" id="messages-icon" style="filter: invert();">
+                <h3 id="messages">Messages</h3>
+            </div>
+            <hr class="nav-hr">
+            <div class="link-set">
+                <img src="img/history.svg" alt="History icon" id="history-icon" style="filter: invert();">
+                <h3 id="history">History</h3>
+            </div>
+            <hr class="nav-hr">
+            <div class="link-set">
+                <img src="img/tasks.svg" alt="Tasks icon" id="-tasks-icon" style="filter: invert();">
+                <h3 id="tasks">Tasks</h3>
+            </div>
+            <hr class="nav-hr">
+            <div class="link-set">
+                <img src="img/communities.svg" alt="Communities icon" id="communities-icon" style="filter: invert();">
+                <h3 id="communities">Communities</h3>
+            </div>
+            <hr class="nav-hr">
+            <div id="utility-link-sets">
+                <div class="link-set">
+                    <img src="img/settings.svg" alt="Settings icon" id="settings-icon" style="filter: invert();">
+                    <h3 id="settings">Settings</h3>
+                </div>
+                <hr class="nav-hr">
+                <div class="link-set">
+                    <img src="img/support.svg" alt="Support icon" id="support-icon" style="filter: invert();">
+                    <h3 id="support">Support</h3>
+                </div>
+                <hr class="nav-hr">
+                <div class="link-set">
+                    <img src="img/security.svg" alt="Privacy icon" id="privacy-icon" style="filter: invert();">
+                    <h3 id="privacy">Privacy</h3>
+                </div>
+                <hr class="nav-hr">
+            </div>
         </div>
         <div class="header">
             <div class="header-top-row">
@@ -45,15 +70,17 @@
                 </div>
                 <div class="user-info">
                     <img src="img/bell.svg" alt="Notification icon" id="notification-icon">
-                    <img src="img/taco.png" alt="User icon" id="user-icon">
+                    <img src="img/taco.png" alt="User icon" class="icon" id="user-icon">
                     <h3 id="user-name">Erich Gaul</h3>
                 </div>
             </div>
             <div class="header-bottom-row">
                 <div class="greeting-area">
-                    <img src="img/taco.png" alt="User icon" id="greeting-user-icon">
-                    <p class="greeting">Hi, there,</p>
-                    <h2 class="greeting-user-info">Erich Gaul (@erichgaul)</h2>
+                    <img src="img/taco.png" alt="User icon" class="icon" id="greeting-user-icon">
+                    <div id="little-greeting">
+                        <p class="greeting">Hi, there,</p>
+                        <h2 class="greeting-user-info">Erich Gaul (@erichgaul)</h2>
+                    </div>
                 </div>
                 <div class="header-buttons">
                     <button class="header-buttons">New</button>
@@ -63,94 +90,106 @@
             </div>
         </div>
         <div class="main-content-area">
+            <h3 id="projects-title">Your Projects</h3>
             <div class="projects-area">
-                <h3 class="section-title" id="projects-title">Your Projects</h3>
                 <div class="project">
                     <h4 class="project-title">Super Cool Project</h4>
                     <p class="project-summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit laboriosam ex ratione mollitia provident magni beatae laudantium similique odio quae.</p>
-                    <a href="example.com" class="favorite"><img src="img/favorite.svg" alt="Add to favorites icon"></a>
-                    <a href="" class="watch"><img src="img/watch.svg" alt="Add to follow icon"></a>
-                    <a href="" class="share"><img src="img/share.svg" alt="Share icon"></a>
+                    <div class="project-buttons">
+                        <a href="example.com" class="favorite"><img src="img/favorite.svg" alt="Add to favorites icon"></a>
+                        <a href="" class="watch"><img src="img/watch.svg" alt="Add to follow icon"></a>
+                        <a href="" class="share"><img src="img/share.svg" alt="Share icon"></a>
+                    </div>
                 </div>
                 <div class="project">
                     <h4 class="project-title">Super Cool Project</h4>
                     <p class="project-summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit laboriosam ex ratione mollitia provident magni beatae laudantium similique odio quae.</p>
-                    <a href="example.com" class="favorite"><img src="img/favorite.svg" alt="Add to favorites icon"></a>
-                    <a href="" class="watch"><img src="img/watch.svg" alt="Add to follow icon"></a>
-                    <a href="" class="share"><img src="img/share.svg" alt="Share icon"></a>
+                    <div class="project-buttons">
+                        <a href="example.com" class="favorite"><img src="img/favorite.svg" alt="Add to favorites icon"></a>
+                        <a href="" class="watch"><img src="img/watch.svg" alt="Add to follow icon"></a>
+                        <a href="" class="share"><img src="img/share.svg" alt="Share icon"></a>
+                    </div>
                 </div>
                 <div class="project">
                     <h4 class="project-title">Super Cool Project</h4>
                     <p class="project-summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit laboriosam ex ratione mollitia provident magni beatae laudantium similique odio quae.</p>
-                    <a href="example.com" class="favorite"><img src="img/favorite.svg" alt="Add to favorites icon"></a>
-                    <a href="" class="watch"><img src="img/watch.svg" alt="Add to follow icon"></a>
-                    <a href="" class="share"><img src="img/share.svg" alt="Share icon"></a>
+                    <div class="project-buttons">
+                        <a href="example.com" class="favorite"><img src="img/favorite.svg" alt="Add to favorites icon"></a>
+                        <a href="" class="watch"><img src="img/watch.svg" alt="Add to follow icon"></a>
+                        <a href="" class="share"><img src="img/share.svg" alt="Share icon"></a>
+                    </div>
                 </div>
                 <div class="project">
                     <h4 class="project-title">Super Cool Project</h4>
                     <p class="project-summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit laboriosam ex ratione mollitia provident magni beatae laudantium similique odio quae.</p>
-                    <a href="example.com" class="favorite"><img src="img/favorite.svg" alt="Add to favorites icon"></a>
-                    <a href="" class="watch"><img src="img/watch.svg" alt="Add to follow icon"></a>
-                    <a href="" class="share"><img src="img/share.svg" alt="Share icon"></a>
+                    <div class="project-buttons">
+                        <a href="example.com" class="favorite"><img src="img/favorite.svg" alt="Add to favorites icon"></a>
+                        <a href="" class="watch"><img src="img/watch.svg" alt="Add to follow icon"></a>
+                        <a href="" class="share"><img src="img/share.svg" alt="Share icon"></a>
+                    </div>
                 </div>
                 <div class="project">
                     <h4 class="project-title">Super Cool Project</h4>
                     <p class="project-summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit laboriosam ex ratione mollitia provident magni beatae laudantium similique odio quae.</p>
-                    <a href="example.com" class="favorite"><img src="img/favorite.svg" alt="Add to favorites icon"></a>
-                    <a href="" class="watch"><img src="img/watch.svg" alt="Add to follow icon"></a>
-                    <a href="" class="share"><img src="img/share.svg" alt="Share icon"></a>
+                    <div class="project-buttons">
+                        <a href="example.com" class="favorite"><img src="img/favorite.svg" alt="Add to favorites icon"></a>
+                        <a href="" class="watch"><img src="img/watch.svg" alt="Add to follow icon"></a>
+                        <a href="" class="share"><img src="img/share.svg" alt="Share icon"></a>
+                    </div>
                 </div>
                 <div class="project">
                     <h4 class="project-title">Super Cool Project</h4>
                     <p class="project-summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit laboriosam ex ratione mollitia provident magni beatae laudantium similique odio quae.</p>
-                    <a href="example.com" class="favorite"><img src="img/favorite.svg" alt="Add to favorites icon"></a>
-                    <a href="" class="watch"><img src="img/watch.svg" alt="Add to follow icon"></a>
-                    <a href="" class="share"><img src="img/share.svg" alt="Share icon"></a>
+                    <div class="project-buttons">
+                        <a href="example.com" class="favorite"><img src="img/favorite.svg" alt="Add to favorites icon"></a>
+                        <a href="" class="watch"><img src="img/watch.svg" alt="Add to follow icon"></a>
+                        <a href="" class="share"><img src="img/share.svg" alt="Share icon"></a>
+                    </div>
                 </div>
 
             </div>
+            <h3 class="section-title" id="announcements-title">Announcements</h3>
             <div class="announcements-area">
                 <div class="announcement">
-                    <h3 class="section-title">Announcements</h3>
                     <h6 class="announcement-title">Site Maitenence</h6>
                     <p class="announcement-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ipsa et incidunt, laborum perferendis doloremque odit modi quas ratione illum.</p>
                 </div>
+                <hr>
                 <div class="announcement">
-                    <h3 class="section-title">Announcements</h3>
                     <h6 class="announcement-title">Site Maitenence</h6>
                     <p class="announcement-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ipsa et incidunt, laborum perferendis doloremque odit modi quas ratione illum.</p>
                 </div>
+                <hr>
                 <div class="announcement">
-                    <h3 class="section-title">Announcements</h3>
                     <h6 class="announcement-title">Site Maitenence</h6>
                     <p class="announcement-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ipsa et incidunt, laborum perferendis doloremque odit modi quas ratione illum.</p>
                 </div>
             </div>
+            <h3 class="section-title" id="trending-title">Trending</h3>
             <div class="trending-area">
-                <h3 class="section-title">Trending</h3>
                 <div class="trending-card">
-                    <img src="img/user1.png" alt="Icon for trending user" class="trending-icon">
+                    <img src="img/user1.png" alt="Icon for trending user" class="icon">
                     <div class="trending-user-info">
                         <p class="username">@tegan</p>
                         <p class="project-name">World Peace Builder</p>
                     </div>
                 </div>
                 <div class="trending-card">
-                    <img src="img/user2.png" alt="Icon for trending user" class="trending-icon">
+                    <img src="img/user2.png" alt="Icon for trending user" class="icon">
                     <div class="trending-user-info">
                         <p class="username">@tegan</p>
                         <p class="project-name">World Peace Builder</p>
                     </div>
                 </div>
                 <div class="trending-card">
-                    <img src="img/user3.png" alt="Icon for trending user" class="trending-icon">
+                    <img src="img/user3.png" alt="Icon for trending user" class="icon">
                     <div class="trending-user-info">
                         <p class="username">@tegan</p>
                         <p class="project-name">World Peace Builder</p>
                     </div>
                 </div>
                 <div class="trending-card">
-                    <img src="img/user4.png" alt="Icon for trending user" class="trending-icon">
+                    <img src="img/user4.png" alt="Icon for trending user" class="icon">
                     <div class="trending-user-info">
                         <p class="username">@tegan</p>
                         <p class="project-name">World Peace Builder</p>
